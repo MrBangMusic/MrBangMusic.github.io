@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="artist-info-style.css">
+    <link rel="stylesheet" href="artist-art-style.css">
+    <title>Mr. Bang</title>
+</head>
+<body>
+    <div class="top-fold">
+        <div id="logo-container"><img src="assets/logo.png" alt=""></div>
+        <div id="left" class="image-container"></div>
+        <div id="middle" class="image-container"></div>
+        <div id="right" class="image-container"></div>
+    </div>
+    <div class="socials">
+        <a href="https://www.facebook.com/josh.lang.33"><i class="fa-brands fa-facebook"></i></a>
+        <a href="https://www.instagram.com/mrbangmusic/"><i class="fa-brands fa-instagram"></i></a>
+        <a href="https://www.tiktok.com/@mr.bang13?_t=8q8INWdh59K&_r=1"><i class="fa-brands fa-tiktok"></i></a>
+    </div>
+    <div class="big-bottom-fold">
+        <div id="artist-info" class="artist">
+            <div class="info-tabs">
+                <div class="tab" id="about-tab">about</div>
+                <div class="tab" id="contact-tab">contact</div>
+            </div>
+            <div id="about">
+                <img src="assets/live.jpg" alt="">
+                <p>Salutations my name is Josh Lang but my other name is Mr.Bang. Currently I am in the greater LA area but my true home is Shasta Lake city in rural Northern California. I am a 21st century songwriter which for me means I play folk/blues style acoustic guitar with alt/Indie/punk lyrics and song subject matter... Basically I am a singer songwriter but where is the fun in calling yourself that?</p>
+            </div>
+            <div id="contact">
+                <form method="POST" action="contact.php"  role="form">
+                    <h3>Contact</h3><br>
+                    <label for="name">Name:</label><br>
+                    <input type="text" name="name" id="contact-name" require><br>
+                    <label for="email">E-mail:</label><br>
+                    <input type="email" name="email" id="contact-email" require><br>
+                    <label for="message">Message:</label><br>
+                    <textarea name="message" id="contact-message" cols="30" rows="5" require></textarea><br>
+                    <input type="submit" value="Send">
+                </form>
+            </div>
+
+        </div>
+        
+            <div id="artist-art" class="artist">
+                <div class="art-tabs">
+                    <div class="tab" id="spotify-tab">spotify</div>
+                    <div class="tab" id="playlist-tab">playlist</div>
+                </div>
+
+                <div id="spotify">
+                    <iframe style="border-radius:12px;" src="https://open.spotify.com/embed/artist/3y13AUcl40h2FMyvmOLDtR?utm_source=generator" width="100%" height="500" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
+                </div>
+                <div id="playlist">
+                    <iframe width="560" height="315" src="https://www.youtube.com/embed/pL3KPoh04ZQ?si=rxFM-yFqXb_DZZua" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                </div>
+            </div>
+
+        
+    </div>
+    <div class="small-bottom-fold">
+        <div class="artist">
+            <div id="about-small">
+                <img src="assets/live.jpg" alt="">
+                <p>Salutations my name is Josh Lang but my other name is Mr.Bang. Currently I am in the greater LA area but my true home is Shasta Lake city in rural Northern California. I am a 21st century songwriter which for me means I play folk/blues style acoustic guitar with alt/Indie/punk lyrics and song subject matter... Basically I am a singer songwriter but where is the fun in calling yourself that?</p>
+            </div>
+        </div>
+        <iframe style="border-radius:12px;" src="https://open.spotify.com/embed/artist/3y13AUcl40h2FMyvmOLDtR?utm_source=generator" width="75%" height="500" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
+        <iframe width="100%" height="315" src="https://www.youtube.com/embed/pL3KPoh04ZQ?si=rxFM-yFqXb_DZZua" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+        <div class="artist">
+            <form method="POST" action="contact.php" role="form">
+                <h3>Contact</h3><br>
+                <label for="name2">Name:</label><br>
+                <input type="text" name="name2" id="small-contact-name"><br>
+                <label for="email2">E-mail:</label><br>
+                <input type="email" name="email2" id="small-contact-email"><br>
+                <label for="message2">Message:</label><br>
+                <textarea name="message2" id="small-contact-message" cols="30" rows="5"></textarea><br>
+                <button type="submit">Send</button>
+            </form>
+        </div>
+    </div>
+
+    <script type="module" src="main.js"></script>
+    <script src="https://kit.fontawesome.com/18f7e464f9.js" crossorigin="anonymous"></script>
+</body>
+</html>

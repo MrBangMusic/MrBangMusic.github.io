@@ -1,0 +1,54 @@
+
+#artist-info {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+#about, #about-small {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#about > img {
+    width: 66%;
+}
+
+#about-small > img {
+    width: 100%;
+}
+
+#about > p {
+    width: 66%;
+    text-align: center;
+}
+
+#contact {
+    display: none;
+}
+
+#contact > form > input {
+    margin-bottom: 10px;
+}
+
+.info-tabs {
+    display: flex;
+    position: absolute;
+    top: 0;
+    left: 1%;
+    transform: translateY(-25px);
+}
+
+.tab {
+    padding: 5px;
+    margin-right: 5px;
+    cursor: pointer; 
+    border: white 1px solid;
+    border-bottom: none;
+    border-radius: 15% 15% 0 0;
+    background-color: black;
+    text-align: center;
+}

@@ -1,0 +1,104 @@
+html, body {
+    margin: 0;
+    padding: 0;
+
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    overflow-x: hidden;
+    background-color: black;
+}
+
+.top-fold, .big-bottom-fold {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 80vh;
+    width: 100%;
+    padding: 30px;   
+}
+
+#logo-container {
+    position: absolute;
+    top: 45%;
+  
+}
+
+#logo-container > img {
+    width: 60vw
+}
+
+.image-container {
+    height: 100%;
+    width: 30%;
+    margin: 0.5%;
+    border: black 1px solid;
+}
+
+#left {
+    border-radius: 50% 0 0 50%;
+    background-image: url(assets/start_image.jpg);
+    background-position: center;
+}
+
+#middle {
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-image: url(assets/end_image.jpg);
+    background-position: center;
+}
+
+#right {
+    border-radius: 0 50% 50% 0;
+    background-image: url(assets/middle_image.jpg);
+    background-position: center;
+    
+}
+
+.socials {
+    font-size: xx-large;
+    text-align: center;
+}
+
+.socials > a {
+    margin: 15px;
+}
+
+.big-bottom-fold {
+    align-items: top;
+}
+
+.small-bottom-fold {
+    display: none;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+     
+}   
+
+.artist {
+    width: 45%;
+    height: 100%;
+    background-color: black;
+    color: white;
+    margin: 15px;
+    border: white 1px solid;
+    padding-inline :66px;
+}
+
+form {
+    padding: 10px;
+}
+
+@media (max-width: 1024px) {
+.big-bottom-fold {
+    display: none;
+}
+.small-bottom-fold {
+    display: flex;
+}
+}
