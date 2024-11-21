@@ -28,6 +28,7 @@
 
 #contact {
     display: none;
+    flex-direction: column;
 }
 
 #contact > form > input {
